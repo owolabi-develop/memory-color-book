@@ -1,4 +1,4 @@
-import Dashboard from "./pages/Dashboard/Dashboard"
+import Dashboard from "./pages/HomePage/Dashboard"
 
 const App = () => {
   return (

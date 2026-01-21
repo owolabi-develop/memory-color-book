@@ -1,5 +1,6 @@
 import HeroImage from '../../assets/heroImage.jpg';
 
+
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen">

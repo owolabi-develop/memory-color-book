@@ -4,7 +4,7 @@ import { GrClose } from "react-icons/gr";
 import { MenuButton,MenuIconContainer } from "../Buttons";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -29,7 +29,9 @@ const Navbar = () => {
         `}
       >
         <div className="flex items-center">
+          <Link to="/">
           <h1 className="text-lg font-bold italic uppercase text-gray-700">Logo</h1>
+          </Link>
         </div>
 
         {/* MENU */}
@@ -92,8 +94,11 @@ const Navbar = () => {
   </a>
 </li>
 
-          <li className="py-2 md:py-0"><MenuButton title="Gift Cards" /></li>
-          <li className="py-2 md:py-0"><MenuIconContainer icon={<AiOutlineUser />} /></li>
+  <li className="py-2 md:py-0"><MenuButton title="Gift Cards" /></li> 
+
+  <Link to="/dashboard/profile/Rachel">
+  <li className="py-2 md:py-0"><MenuIconContainer icon={<AiOutlineUser />} /></li>
+  </Link>
           <li className="py-2 md:py-0"><MenuIconContainer icon={<HiOutlineShoppingBag />} /></li>
         </ul>
 
