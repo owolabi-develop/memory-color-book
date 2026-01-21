@@ -11,25 +11,25 @@ const HowItWorks: React.FC = () => {
   const steps: Step[] = [
     {
       id: 1,
-      title: 'Start with a memory',
+      title: '1. Start with a memory',
       description: 'Rachel gets the heart of it—who this is for and what story you\'re telling.',
       image: 'https://via.placeholder.com/400x300?text=Step+1'
     },
     {
       id: 2,
-      title: 'Tell your story',
+      title: '2. Tell your story',
       description: 'Upload the moments that matter. Rachel asks the right questions and helps you find the perfect words.',
       image: 'https://via.placeholder.com/400x300?text=Step+2'
     },
     {
       id: 3,
-      title: 'We handle the magic',
+      title: '3. We handle the magic',
       description: '"Love-to-Line™" does the rest. Your photos turn into line art, your words become captions.',
       image: 'https://via.placeholder.com/400x300?text=Step+3'
     },
     {
       id: 4,
-      title: 'The finishing touches',
+      title: '4. The finishing touches',
       description: 'Choose fonts and borders, see the final book, and order. Easy.',
       image: 'https://via.placeholder.com/400x300?text=Step+4'
     }

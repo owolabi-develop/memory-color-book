@@ -51,12 +51,47 @@ const Navbar = () => {
             transition-all duration-500 ease-in-out
           `}
         >
-          <li className="hover:text-blue-400 py-2 md:py-0"><a href="/">Choose Your Theme</a></li>
-          <li className="hover:text-blue-400 py-2 md:py-0"><a href="/">Choose Your Recipient</a></li>
-          <li className="hover:text-blue-400 py-2 md:py-0"><a href="/">How it Works</a></li>
-          <li className="hover:text-blue-400 py-2 md:py-0"><a href="/">Meet Rachel AI</a></li>
-          <li className="hover:text-blue-400 py-2 md:py-0"><a href="/">Our Story</a></li>
-          <li className="py-2 md:py-0"><MenuButton title="Create Your Book" /></li>
+          
+<li className="group py-2 md:py-0">
+  <a href="/" className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black">
+    Choose Your Theme
+    <span className="pointer-events-none absolute left-1/2 -bottom-0.5 h-[2px] w-0 bg-black 
+      transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
+  </a>
+</li>
+
+<li className="group py-2 md:py-0">
+  <a href="/" className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black">
+    Choose Your Recipient
+    <span className="pointer-events-none absolute left-1/2 -bottom-0.5 h-[2px] w-0 bg-black 
+      transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
+  </a>
+</li>
+
+<li className="group py-2 md:py-0">
+  <a href="/" className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black">
+    How it Works
+    <span className="pointer-events-none absolute left-1/2 -bottom-0.5 h-[2px] w-0 bg-black 
+      transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
+  </a>
+</li>
+
+<li className="group py-2 md:py-0">
+  <a href="/" className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black">
+    Meet Rachel AI
+    <span className="pointer-events-none absolute left-1/2 -bottom-0.5 h-[2px] w-0 bg-black 
+      transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
+  </a>
+</li>
+
+<li className="group py-2 md:py-0">
+  <a href="/" className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black">
+    Our Story
+    <span className="pointer-events-none absolute left-1/2 -bottom-0.5 h-[2px] w-0 bg-black 
+      transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
+  </a>
+</li>
+
           <li className="py-2 md:py-0"><MenuButton title="Gift Cards" /></li>
           <li className="py-2 md:py-0"><MenuIconContainer icon={<AiOutlineUser />} /></li>
           <li className="py-2 md:py-0"><MenuIconContainer icon={<HiOutlineShoppingBag />} /></li>

@@ -75,7 +75,7 @@ const TestimonialSection: React.FC = () => {
 
         {/* CTA Button */}
         <div className="text-center mt-12 sm:mt-16">
-          <button className="border border-gray-800 text-gray-900 text-sm font-medium px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
+          <button className="border border-gray-800 text-gray-900 text-sm font-medium px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300">
             Start Creating With Rachel
           </button>
         </div>

@@ -25,7 +25,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({
     rounded-xl     
     font-medium
     transition-colors duration-300 ease-in-out
-    hover:bg-gray-200 hover:text-black
+    hover:bg-black hover:text-white
     cursor-pointer
     ${className}
   `}
@@ -62,7 +62,7 @@ export const MenuIconContainer: React.FC<MenuIconContainerProps> = ({
     rounded-xl     
     font-medium
     transition-colors duration-300 ease-in-out
-    hover:bg-gray-200 hover:text-black
+    hover:bg-black hover:text-white
     cursor-pointer
     ${className}
   `}

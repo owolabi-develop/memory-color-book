@@ -1,34 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface StoryCard {
   id: number;
   title: string;
   description: string;
+  category: 'adults' | 'kids';
 }
 
 const StorySection: React.FC = () => {
+  const [activeCategory, setActiveCategory] = useState<'adults' | 'kids'>('adults');
+
   const stories: StoryCard[] = [
     {
       id: 1,
       title: 'Family Adventure Book',
-      description: 'Color your family journey with beautiful line art memories'
+      description: 'Color your family journey with beautiful line art memories',
+      category: 'adults'
     },
     {
       id: 2,
-      title: "Baby's First Year",
-      description: 'Color every precious milestone in your little one\'s journey'
+      title: 'Wedding Memories',
+      description: 'Your love story beautifully colored from engagement to "I do"',
+      category: 'adults'
     },
     {
       id: 3,
-      title: 'Wedding Memories',
-      description: 'Your love story beautifully colored from engagement to "I do"'
+      title: 'Retirement Celebration',
+      description: 'Celebrate milestones with personalized coloring memories',
+      category: 'adults'
     },
     {
       id: 4,
+      title: 'Travel Memories',
+      description: 'Relive your favorite adventures in beautiful line art',
+      category: 'adults'
+    },
+    {
+      id: 5,
+      title: "Baby's First Year",
+      description: 'Color every precious milestone in your little one\'s journey',
+      category: 'kids'
+    },
+    {
+      id: 6,
       title: 'Birthday Celebration',
-      description: 'Color every birthday unforgettable personalized story'
+      description: 'Color every birthday unforgettable personalized story',
+      category: 'kids'
+    },
+    {
+      id: 7,
+      title: 'School Adventures',
+      description: 'Celebrate learning milestones with colorful memories',
+      category: 'kids'
+    },
+    {
+      id: 8,
+      title: 'Summer Fun',
+      description: 'Create colorful memories of fun summer moments',
+      category: 'kids'
     }
   ];
+
+  const filteredStories = stories.filter(story => story.category === activeCategory);
 
   return (
     <div className="min-h-screen px-4 py-12 sm:px-6 lg:px-8">
@@ -46,25 +79,46 @@ const StorySection: React.FC = () => {
           </p>
         </div>
 
+        {/* Toggle Section - Right Aligned */}
+        <div className="flex justify-end mb-12 sm:mb-16">
+          <div className="flex gap-2">
+            {/* Adults Toggle */}
+            <button
+              onClick={() => setActiveCategory('adults')}
+              className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full flex items-center justify-center font-semibold text-xs sm:text-sm transition-all duration-300 border-2 ${
+                activeCategory === 'adults'
+                  ? 'bg-gray-900 text-white border-gray-900 shadow-md'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400 hover:shadow-md hover:scale-105'
+              }`}
+            >
+              Adults
+            </button>
+
+            {/* Kids Toggle */}
+            <button
+              onClick={() => setActiveCategory('kids')}
+              className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full flex items-center justify-center font-semibold text-xs sm:text-sm transition-all duration-300 border-2 ${
+                activeCategory === 'kids'
+                  ? 'bg-gray-900 text-white border-gray-900 shadow-md'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400 hover:shadow-md hover:scale-105'
+              }`}
+            >
+              Kids
+            </button>
+          </div>
+        </div>
+
         {/* Stories Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {stories.map((story) => (
+          {filteredStories.map((story) => (
             <div key={story.id} className="flex flex-col">
               {/* Card Image Placeholder */}
               <div className="bg-gray-300 rounded-lg w-full aspect-square flex items-center justify-center mb-4">
-                <svg
-                  className="w-16 h-16 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
+                <img 
+                  src={`https://via.placeholder.com/300x300?text=${story.title}`}
+                  alt={story.title}
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
 
               {/* Card Content */}
@@ -75,7 +129,7 @@ const StorySection: React.FC = () => {
                 <p className="text-sm text-gray-600 mb-4 flex-1">
                   {story.description}
                 </p>
-                <button className="border border-gray-800 text-gray-900 text-sm font-medium px-6 py-2 rounded-xl hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition-all duration-300 self-start">
+                <button className="border border-gray-800 text-gray-900 text-sm font-medium px-6 py-2 rounded-xl hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300 self-start">
                   Start with this theme
                 </button>
               </div>

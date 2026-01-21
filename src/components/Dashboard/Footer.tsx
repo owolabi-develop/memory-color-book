@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
               />
               <button
                 type="submit"
-                className="w-full sm:w-auto px-6 py-2.5 border border-gray-800 text-gray-900 text-sm font-medium rounded-xl hover:bg-gray-50 transition-colors duration-200"
+                className="w-full sm:w-auto px-6 py-2.5 border border-gray-800 text-gray-900 text-sm font-medium rounded-xl transition-colors duration-200 hover:bg-black hover:text-white"
               >
                 {subscribed ? 'Subscribed!' : 'Subscribe'}
               </button>
