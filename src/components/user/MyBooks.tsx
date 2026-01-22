@@ -2,7 +2,7 @@ import { Book } from "./Book"
 import React from 'react';
 import HeroImage from '../../assets/heroImage.jpg';
 import GardenImage from '../../assets/garden.jpg';
-import AdventureImage from '../../assets/Adventure.jpg';
+import AdventureImage from '../../assets/adventure.jpg';
 
 interface CategoryTitle {
   title: string;
