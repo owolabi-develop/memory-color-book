@@ -8,7 +8,7 @@ const UserBooks = () => {
   return (
     <>
     <Navbar/>
-    <HeroCover url={HeroImage} title={`My Books`} description={`Preserve your memories and stories ith Love in Color's personalized coloring book collection.`}/>
+    <HeroCover url={HeroImage} title={`My Books`} description={`Preserve your memories and stories with Love in Color's personalized coloring book collection.`}/>
      <Whitespace/>
    <Footer/>
     </>

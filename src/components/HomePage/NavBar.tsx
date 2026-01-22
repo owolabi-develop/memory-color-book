@@ -51,7 +51,7 @@ const Navbar = () => {
         {/* MENU */}
         <ul
           className={`
-            md:flex md:items-center md:gap-6 font-medium text-gray-700 [&>li]:cursor-pointer
+            md:flex md:items-center gap-2 sm:gap-2 md:gap-6 font-medium text-gray-700 [&>li]:cursor-pointer
             absolute md:static left-0 top-full w-full md:w-auto bg-white
             flex flex-col md:flex-row text-center md:text-left
 
@@ -72,7 +72,7 @@ const Navbar = () => {
             <li key={item.id} className="group py-2 md:py-0">
               <Link
                 to={item.to}
-                className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black"
+                className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black whitespace-nowrap"
                 onClick={() => setOpenMenu(false)}
               >
                 {item.label}
@@ -85,7 +85,7 @@ const Navbar = () => {
           ))}
 
           <li className="py-2 md:py-0">
-            <MenuButton title="Gift Cards" />
+            <MenuButton title="Gift Cards" className="whitespace-nowrap" />
           </li>
 
           <li className="py-2 md:py-0">
