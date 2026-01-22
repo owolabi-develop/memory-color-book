@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 export default function HeaderSection(props:any) {
   return (
-    <section className="relative w-full min-h-screen p-22 bg-white">
+    <section className="relative w-full p-22 bg-white">
      
       <div className="bg-gray-50 rounded-lg shadow-md p-4">
 
@@ -21,25 +21,25 @@ export default function HeaderSection(props:any) {
        <div className=''>
         {/* profile holder */}
         <div className="flex items-center gap-4 py-2">
-        <div className="bg-gray-200 p-4 rounded-full">
+        <div className="bg-gray-200 p-3 md:p-4 rounded-full">
           <User/>
         </div>
 
         <div>
-          <h1 className="text-4xl leading-none font-bold">Hi, {props.username}</h1>
+          <h1 className=" text-2xl md:text-4xl leading-none font-bold">Hi, {props.username}</h1>
         </div>
       </div>
          {/* profile holder */}
         
-        <p className='text-gray-800 text-base'> Manage your email, shipping address, payment methods, and privacy preferences all in one place
+        <p className='text-gray-800  text-sm md:text-base'> Manage your email, shipping address, payment methods, and privacy preferences all in one place
         </p>
 
-        <button className='w-full bg-white p-2 mt-3 rounded-lg'> Important Notifications</button>
+        <button className='w-full bg-white p-2 mt-3 rounded-lg shadow-sm'> Important Notifications</button>
        </div>
        
 
         {/* Right Side -  */}
-        <div className='px-10'>
+        <div className='md:px-10 lg:px-10'>
 
           {/* email */}
           <div className="py-2">

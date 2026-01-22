@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* MENU */}
         <ul
           className={`
-            md:flex md:items-center md:gap-4 font-medium text-gray-700 [&>li]:cursor-pointer
+            md:flex md:items-center md:gap-6 font-medium text-gray-700 [&>li]:cursor-pointer
             absolute md:static left-0 md:left-auto top-full md:top-auto w-full md:w-auto bg-white
             flex flex-col md:flex-row text-center md:text-left
 
