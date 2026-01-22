@@ -26,7 +26,7 @@ export default function HeaderSection(props:any) {
         </div>
 
         <div>
-          <h1 className=" text-2xl md:text-4xl leading-none font-bold">Hi, {props.username}</h1>
+          <h1 className=" text-2xl md:text-4xl leading-none font-bold capitalize">Hi, {props.username}</h1>
         </div>
       </div>
          {/* profile holder */}

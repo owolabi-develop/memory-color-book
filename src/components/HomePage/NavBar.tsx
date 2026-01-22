@@ -89,7 +89,7 @@ const Navbar = () => {
           </li>
 
           <li className="py-2 md:py-0">
-            <Link to="/dashboard/profile/Rachel" onClick={() => setOpenMenu(false)}>
+            <Link to="/dashboard/profile/rachel" onClick={() => setOpenMenu(false)}>
               <MenuIconContainer icon={<AiOutlineUser />} />
             </Link>
           </li>
