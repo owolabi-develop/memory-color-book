@@ -12,7 +12,7 @@ const HowItWorks: React.FC = () => {
     {
       id: 1,
       title: '1. Start with a memory',
-      description: 'Rachel gets the heart of it—who this is for and what story you\'re telling.',
+      description: 'Rachel gets the heart of it who this is for and what story you\'re telling.',
       image: 'https://via.placeholder.com/400x300?text=Step+1'
     },
     {
@@ -82,7 +82,7 @@ const HowItWorks: React.FC = () => {
           <div className="inline-block bg-white border-2 border-gray-400 rounded-full px-6 sm:px-8 py-3 sm:py-4">
             <p className="text-gray-700 text-xs sm:text-sm">
               <span className="font-semibold">Your book starts at only $29</span>
-              <span className="text-gray-600 mx-1">—and the more you buy, the less you pay.</span>
+              <span className="text-gray-600 mx-1"> and the more you buy, the less you pay.</span>
               <span className="text-gray-700 font-semibold cursor-pointer hover:underline">See pricing</span>
             </p>
           </div>

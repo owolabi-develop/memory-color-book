@@ -35,7 +35,7 @@ const MeetRachel: React.FC = () => {
                 Meet Rachel AI
               </h1>
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                She helps you remember—not just what happened, but how it felt. The joke your dad told. The way your daughter laughed. The moment right after the camera clicked.
+                She helps you remember not just what happened, but how it felt. The joke your dad told. The way your daughter laughed. The moment right after the camera clicked.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ const MeetRachel: React.FC = () => {
                   Never Face a Blank Page Alone
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  Rachel suggests caption options to choose from, edit, or build on. You stay in control of your story—she just makes it easier to tell.
+                  Rachel suggests caption options to choose from, edit, or build on. You stay in control of your story she just makes it easier to tell.
                 </p>
               </div>
 
@@ -57,7 +57,7 @@ const MeetRachel: React.FC = () => {
                   From Days to Minutes
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  We made our first book the hard way—it took days. With Rachel, it takes as little as 15 minutes. She handles layout and design while you focus on memories.
+                  We made our first book the hard way it took days. With Rachel, it takes as little as 15 minutes. She handles layout and design while you focus on memories.
                 </p>
               </div>
             </div>
