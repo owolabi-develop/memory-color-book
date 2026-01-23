@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { FiX } from "react-icons/fi";
+import { MenuButton,MenuIconContainer } from "../Buttons";
+import { AiOutlineUser } from "react-icons/ai";
+import ChatWidget from "./AIChatWidget/ChatWidget";
 
 type ModalProps = {
   onClose: () => void;
@@ -47,11 +50,17 @@ const AIModal = ({ onClose, onBack}: ModalProps) => {
             />
           </div>
 
-          <div className="w-8" />
+          <div className="flex items-center justify-between px-3 py-2 gap-2">
+            <MenuButton title="Gift Cards"/>
+            <MenuIconContainer icon={<AiOutlineUser />} />
+          </div>
         </div>
 
-        {/* BODY */}
-        <div className="min-h-[300px] p-6" />
+        {/*Chat BODY */}
+        <div className="">
+          <ChatWidget/>
+        </div>
+        {/*Chat BODY */}
 
         {/* FOOTER */}
         <div className="flex items-center px-3 py-2 border-t border-gray-100">
