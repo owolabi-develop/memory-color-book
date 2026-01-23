@@ -84,6 +84,10 @@ const Navbar = () => {
             </li>
           ))}
 
+           <li className="py-2 md:py-0">
+            <MenuButton title="Create Your Book" className="whitespace-nowrap" />
+          </li>
+
           <li className="py-2 md:py-0">
             <MenuButton title="Gift Cards" className="whitespace-nowrap" />
           </li>
