@@ -52,7 +52,7 @@ const Hero = () => {
             >
               Photos become pages you can color. Your memories become captions you
               treasure. Moments you don’t want to forget become something you
-              return to again and again — all because Rachel makes it easy.
+              return to again and again. all because Rachel makes it easy.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex gap-4">
