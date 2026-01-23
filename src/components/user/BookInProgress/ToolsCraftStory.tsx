@@ -158,16 +158,17 @@ const ToolsCraftStory = () => {
               </div>
             </div>
 
-            {/* Image */}
-            <div className="order-1 lg:order-2 w-96">
-              <div className="w-full aspect-square sm:aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden shadow-sm bg-gray-100">
-                <img
-                  src={tabs[activeTab].image}
-                  alt={tabs[activeTab].label}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+           {/* Image */}
+<div className="order-1 lg:order-2 w-full max-w-sm mx-auto lg:max-w-md">
+  <div className="w-full aspect-square sm:aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden shadow-sm bg-gray-100">
+    <img
+      src={tabs[activeTab].image}
+      alt={tabs[activeTab].label}
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
 
           </div>
         </div>
