@@ -5,10 +5,14 @@ import { MenuButton,MenuIconContainer } from "../Buttons";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router";
+import { AnimatePresence } from "framer-motion";
+import AIModal from "../AI/AIModal";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const menuHandler = () => setOpenMenu((prev) => !prev);
 
@@ -30,6 +34,13 @@ const Navbar = () => {
 
   return (
     <>
+    {/* AImodal */}
+    <AnimatePresence>
+        {isModalOpen && (
+          <AIModal onClose={() => setIsModalOpen(false)} />
+        )}
+      </AnimatePresence>
+      
       {/* NAVBAR */}
       <nav
         className={`flex justify-between items-center bg-white h-14 p-4 md:p-6 w-[96%] m-auto 
@@ -85,7 +96,7 @@ const Navbar = () => {
           ))}
 
            <li className="py-2 md:py-0">
-            <MenuButton title="Create Your Book" className="whitespace-nowrap" />
+            <MenuButton  onClick={() => setIsModalOpen(true)} title="Create Your Book" className="whitespace-nowrap" />
           </li>
 
           <li className="py-2 md:py-0">
