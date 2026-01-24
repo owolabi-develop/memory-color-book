@@ -4,7 +4,7 @@ const ContinueJourney = () => {
   return (
     <section className="w-full px-4 sm:px-6 lg:px-10 py-12">
       <div className="max-w-7xl mx-auto">
-        <div className="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] rounded-xl overflow-hidden">
+        <div className="relative w-full h-[20vh] sm:h-[30vh] md:h-[40vh] lg:h-[50vh] rounded-xl overflow-hidden">
           
           {/* Background Image */}
           <img

@@ -1,34 +1,42 @@
-
+import HeroImage from '../../assets/heroImage.jpg'
 
 const BrowseGiftCard = () => {
   return (
-   <div className="w-full px-4 sm:px-8 m-4 sm:m-6">
-  <div className="relative w-full h-48 bg-gray-300 rounded-xl overflow-hidden">
+   <section className="w-full px-4 sm:px-6 lg:px-10 py-12">
+      <div className="max-w-7xl mx-auto">
+        <div className="relative w-full h-[20vh] sm:h-[30vh] md:h-[40vh] lg:h-[50vh] rounded-xl overflow-hidden">
+          
+          {/* Background Image */}
+          <img
+            src={HeroImage} 
+            alt="Continue your journey"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
 
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-      <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white">
-        Give a book, Keep a memory
-      </h1>
+          {/* Gray Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-500/30 via-gray-600/30 to-gray-700/60" />
 
-      <p className="mt-2 text-xs sm:text-sm md:text-base text-white max-w-xl">
-        Share the gift of a custom coloring book. Choose a design, set the delivery date, and send it to someone who matters.
-      </p>
+          {/* Centered Content */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-1 md:px-4 text-center gap-2">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
+              Give a book, keep a memory
+            </h1>
+            <h1 className="text-sm sm:text-base md:text-lg text-gray-100 max-w-2xl">
+             Share the gift of a custom coloring book. Choose a design, set the delivery date, and send it straight to someone who matters
+            </h1>
 
-      {/* Buttons */}
-      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 items-center justify-center">
-        <button className="bg-white text-black text-xs sm:text-sm font-medium px-5 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
-          Browse gift cards
-        </button>
-
-        <button className="border border-black text-white text-xs sm:text-sm font-medium px-5 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
-          Learn more
-         
-        </button>
+            <div className="flex gap-3 mt-2 justify-center">
+              <button className="bg-white text-gray-900 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black hover:text-white transition">
+                Browse gift cards
+              </button>
+              <button className="border border-white text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black hover:text-white transition">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-  </div>
-</div>
+    </section>
 
   )
 }
