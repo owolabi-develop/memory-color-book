@@ -73,3 +73,32 @@ export const MenuIconContainer: React.FC<MenuIconContainerProps> = ({
 };
 
 
+export const GeneralButton: React.FC<MenuButtonProps> = ({
+  title,
+  onClick,
+  className = "",
+}) => {
+  return (
+   <button
+  type="button"
+  onClick={onClick}
+  className={`
+    px-3 py-1         
+    border border-gray-400
+    bg-transparent
+    text-black text-sm  
+    rounded-xl     
+    font-medium
+    transition-colors duration-300 ease-in-out
+    hover:bg-black hover:text-white
+    cursor-pointer
+    ${className}
+  `}
+>
+  {title}
+</button>
+
+  );
+};
+
+

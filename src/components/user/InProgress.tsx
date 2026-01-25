@@ -12,7 +12,7 @@ export const InProgress = (props:any) => {
 
              {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
-              <Link to="/dashboard/profile/rachel/book/inprogress">
+              <Link to="/dashboard/user-profile/rachel/book/inprogress">
               <button className="border border-gray-800 text-gray-900 text-xs sm:text-sm font-medium px-5 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
                 Resume
               </button>

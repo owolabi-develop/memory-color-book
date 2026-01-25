@@ -5,15 +5,11 @@ import { MenuButton,MenuIconContainer } from "../Buttons";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router";
-import { AnimatePresence } from "framer-motion";
-import AIModal from "../AI/AIModal";
+
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const menuHandler = () => setOpenMenu((prev) => !prev);
 
   useEffect(() => {
@@ -34,18 +30,13 @@ const Navbar = () => {
 
   return (
     <>
-    {/* AImodal */}
-    <AnimatePresence>
-        {isModalOpen && (
-          <AIModal onClose={() => setIsModalOpen(false)} />
-        )}
-      </AnimatePresence>
+    
       
       {/* NAVBAR */}
       <nav
         className={`flex justify-between items-center bg-white h-14 p-4 md:p-6 w-[96%] m-auto 
           fixed left-1/2 -translate-x-1/2 drop-shadow-xl z-20
-          transition-all duration-500 ease-in-out
+          transition-all duration-500 ease-in-out overflow-hidden
           ${
             scrolling
               ? "top-0 w-full rounded-none"
@@ -55,9 +46,7 @@ const Navbar = () => {
           }
         `}
       >
-        <Link to="/" className="text-lg font-bold italic uppercase text-gray-700">
-          Logo
-        </Link>
+       
 
         {/* MENU */}
         <ul
@@ -79,6 +68,9 @@ const Navbar = () => {
             transition-all duration-500 ease-in-out
           `}
         >
+           <Link to="/" className="text-lg font-bold italic uppercase text-gray-700 px-6">
+          Logo
+        </Link>
           {navItems.map((item) => (
             <li key={item.id} className="group py-2 md:py-0">
               <Link
@@ -96,7 +88,9 @@ const Navbar = () => {
           ))}
 
            <li className="py-2 md:py-0">
-            <MenuButton  onClick={() => setIsModalOpen(true)} title="Create Your Book" className="whitespace-nowrap" />
+            <Link to="/create-book">
+            <MenuButton  title="Create Your Book" className="whitespace-nowrap" />
+            </Link>
           </li>
 
           <li className="py-2 md:py-0">
@@ -104,7 +98,7 @@ const Navbar = () => {
           </li>
 
           <li className="py-2 md:py-0">
-            <Link to="/dashboard/profile/rachel" onClick={() => setOpenMenu(false)}>
+            <Link to="/dashboard/user-profile/rachel" onClick={() => setOpenMenu(false)}>
               <MenuIconContainer icon={<AiOutlineUser />} />
             </Link>
           </li>
