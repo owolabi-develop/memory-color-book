@@ -7,9 +7,11 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router";
 
 
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+
   const menuHandler = () => setOpenMenu((prev) => !prev);
 
   useEffect(() => {
@@ -30,13 +32,13 @@ const Navbar = () => {
 
   return (
     <>
-    
+
       
       {/* NAVBAR */}
       <nav
         className={`flex justify-between items-center bg-white h-14 p-4 md:p-6 w-[96%] m-auto 
           fixed left-1/2 -translate-x-1/2 drop-shadow-xl z-20
-          transition-all duration-500 ease-in-out overflow-hidden
+          transition-all duration-500 ease-in-out
           ${
             scrolling
               ? "top-0 w-full rounded-none"
@@ -68,11 +70,12 @@ const Navbar = () => {
             transition-all duration-500 ease-in-out
           `}
         >
-           <Link to="/" className="text-lg font-bold italic uppercase text-gray-700 px-6">
+           <Link to="/" className="text-lg font-bold italic uppercase text-gray-700">
           Logo
         </Link>
+        
           {navItems.map((item) => (
-            <li key={item.id} className="group py-2 md:py-0">
+            <li key={item.id} className="group py-2 md:py-0  block md:hidden lg:block">
               <Link
                 to={item.to}
                 className="relative inline-block text-gray-800 transition-colors duration-200 group-hover:text-black whitespace-nowrap"
@@ -88,8 +91,8 @@ const Navbar = () => {
           ))}
 
            <li className="py-2 md:py-0">
-            <Link to="/create-book">
-            <MenuButton  title="Create Your Book" className="whitespace-nowrap" />
+            <Link to='/create-book'>
+            <MenuButton title="Create Your Book" className="whitespace-nowrap" />
             </Link>
           </li>
 
