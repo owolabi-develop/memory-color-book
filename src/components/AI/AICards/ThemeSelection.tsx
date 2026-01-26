@@ -50,10 +50,10 @@ const ThemeSelection: React.FC = () => {
                     key={theme}
                     type="button"
                     onClick={() => setSelected({ theme })}
-                    className={` px-2 py-1 md:px-4 md:py-2 rounded-lg border text-sm font-medium transition flex items-center justify-between ${ isActive? "bg-black text-white border-black whitespace-nowrap": "bg-white text-gray-700 border-gray-300 hover:bg-gray-100 whitespace-nowrap"
+                    className={` px-2 py-1 md:px-4 md:py-2 rounded-lg border text-sm font-medium transition flex items-center justify-between ${ isActive? "bg-black text-white border-black md:whitespace-nowrap": "bg-white text-gray-700 border-gray-300 hover:bg-gray-100 md:whitespace-nowrap"
                     }
                     `}
-                    ><span>{theme}</span> <span className="ml-2"> <ArrowRight size={18} /></span>
+                    ><span>{theme}</span> <span className="ml-2 hidden md:block"> <ArrowRight size={18} /></span>
                     </button>
             );
             })}
