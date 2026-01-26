@@ -28,19 +28,30 @@ const PreviewSelection: React.FC = () => {
        
 
         {/* Button Control */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-1 mt-2">
-          
-                    <button type="button"
-                    className={`px-2 py-1 md:px-4 md:py-2 rounded-lg border text-sm font-medium transition flex items-center justify-between bg-white text-gray-700 border-gray-300 hover:bg-gray-100 md:whitespace-nowrap `}
-                    ><span> Let's keep going</span> <span className="ml-2 hidden md:block"> <ArrowRight size={18} /></span>
-                    </button>
+  <div className="flex gap-2 mt-2 justify-center">
+  <button type="button" className="w-32 md:w-40 px-3 py-2 rounded-lg border text-sm font-medium transition
+               flex items-center justify-between bg-white text-gray-700 border-gray-300 
+               hover:bg-gray-100 whitespace-nowrap"
+  >
+    <span>Let's keep going</span>
+    <span className="ml-2 hidden sm:block">
+      <ArrowRight size={18} />
+    </span>
+  </button>
 
-                    <button type="button"
-                    className={`px-2 py-1 md:px-4 md:py-2 rounded-lg border text-sm font-medium transition flex items-center justify-between bg-white text-gray-700 border-gray-300 hover:bg-gray-100 md:whitespace-nowrap `}
-                    ><span> Show me a preview</span> <span className="ml-2 hidden md:block"> <ArrowRight size={18} /></span>
-                    </button>
-           
-            </div>
+  <button
+    type="button"
+    className="w-32 md:w-40 px-3 py-2 rounded-lg border text-sm font-medium transition
+               flex items-center justify-between bg-white text-gray-700 border-gray-300 
+               hover:bg-gray-100 whitespace-nowrap"
+  >
+    <span>Show me a preview</span>
+    <span className="ml-2 hidden sm:block">
+      <ArrowRight size={18} />
+    </span>
+  </button>
+</div>
+
 
        {/* Button controls */}
       </div>
