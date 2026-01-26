@@ -55,11 +55,11 @@ const Hero = () => {
               return to again and again. all because Rachel makes it easy.
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex gap-4">
+            <motion.div variants={itemVariants} className="flex flex-col md:flex-row gap-4">
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.96 }}
-                className="rounded-lg bg-slate-900 px-8 py-3 text-white"
+                className="rounded-lg bg-slate-900 px-8 py-3 text-white whitespace-nowrap"
               >
                 Create Your Book →
               </motion.button>
@@ -67,7 +67,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.96 }}
-                className="rounded-lg border-2 border-slate-900 px-8 py-3 text-slate-900"
+                className="rounded-lg border-2 border-slate-900 px-8 py-3 text-slate-900 whitespace-nowrap"
               >
                 See How It Works
               </motion.button>
