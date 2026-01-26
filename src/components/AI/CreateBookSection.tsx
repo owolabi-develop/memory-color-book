@@ -2,6 +2,15 @@ import {} from 'react'
 import { motion } from "framer-motion";
 import { GeneralButton } from '../Buttons';
 import { SendHorizontal, Mic } from "lucide-react"
+// import IntroCard from './AICards/IntroCard'; 
+// import AIDIYChoice from './AICards/AIDiyChoice';
+// import RecipientCard from './AICards/RecipientCard';
+// import ForSomeoneElse from './AICards/ForSomeOneElse';
+// import RecipientRelationship from './AICards/RecipientRelationship';
+// import RecipientAge from './AICards/RecipientAge';
+import ThemeSelection from './AICards/ThemeSelection';
+
+
 
 const CreateBookSection = () => {
   const TOTAL_STEPS = 39;
@@ -32,7 +41,10 @@ const CreateBookSection = () => {
          {/* header section */}
 
          {/* main section */}
-          <div className='w-full h-[27.8rem] md:h-[30rem] mt-2 p-2'>In Progress..</div>
+          <div className='flex item-center justify-center w-full h-[27.8rem] md:h-[30rem] mt-2 p-2 py-18'>
+
+          <ThemeSelection/>
+          </div>
 
         {/* main section */}
 
@@ -51,12 +63,12 @@ const CreateBookSection = () => {
             {/* back control */}
 
             {/* chat input */}
-              <div className="">
-                    <div className="flex items-center gap-3 border rounded-xl px-4 py-1">
+              <div className="flex item-center justify-center">
+                    <div className="flex items-center gap-3 border rounded-xl px-2 py-1 w-full">
             
                       <input
                         placeholder="Ask Rachel"
-                        className="flex-1 bg-transparent text-sm text-600 placeholder-gray-400 focus:outline-none"
+                        className="flex-1  text-sm text-600 placeholder-gray-400 focus:outline-none w-full"
                       />
             
                       <button className="text-gray-600 hover:text-white transition cursor-pointer hover:bg-gray-500 rounded-full p-2">
