@@ -10,7 +10,8 @@ import { SendHorizontal, Mic } from "lucide-react"
 // import RecipientAge from './AICards/RecipientAge';
 // import ThemeSelection from './AICards/ThemeSelection';
 // import SubThemeSelection from './AICards/SubthemeSelection';
-import PreviewSelection from './AICards/PreviewCard';
+// import PreviewSelection from './AICards/PreviewCard';
+import EmailCapture from './AICards/EmailCapture';
 
 
 
@@ -45,7 +46,7 @@ const CreateBookSection = () => {
          {/* main section */}
           <div className='flex item-center justify-center w-full h-[27.8rem] md:h-[30rem] mt-2 p-2 py-18'>
 
-          <PreviewSelection/>
+          <EmailCapture/>
           </div>
 
         {/* main section */}
