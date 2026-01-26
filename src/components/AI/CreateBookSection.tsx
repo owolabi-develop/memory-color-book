@@ -8,7 +8,8 @@ import { SendHorizontal, Mic } from "lucide-react"
 // import ForSomeoneElse from './AICards/ForSomeOneElse';
 // import RecipientRelationship from './AICards/RecipientRelationship';
 // import RecipientAge from './AICards/RecipientAge';
-import ThemeSelection from './AICards/ThemeSelection';
+// import ThemeSelection from './AICards/ThemeSelection';
+import SubThemeSelection from './AICards/SubthemeSelection';
 
 
 
@@ -43,7 +44,7 @@ const CreateBookSection = () => {
          {/* main section */}
           <div className='flex item-center justify-center w-full h-[27.8rem] md:h-[30rem] mt-2 p-2 py-18'>
 
-          <ThemeSelection/>
+          <SubThemeSelection/>
           </div>
 
         {/* main section */}
