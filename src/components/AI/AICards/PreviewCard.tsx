@@ -29,7 +29,7 @@ const PreviewSelection: React.FC = () => {
 
         {/* Button Control */}
   <div className="flex gap-2 mt-2 justify-center">
-  <button type="button" className="w-32 md:w-40 px-3 py-2 rounded-lg border text-sm font-medium transition
+  <button type="button" className="min-w-[10rem] max-w-[10rem] px-3 py-2 rounded-lg border text-sm font-medium transition
                flex items-center justify-between bg-white text-gray-700 border-gray-300 
                hover:bg-gray-100 whitespace-nowrap"
   >
@@ -41,7 +41,7 @@ const PreviewSelection: React.FC = () => {
 
   <button
     type="button"
-    className="w-32 md:w-40 px-3 py-2 rounded-lg border text-sm font-medium transition
+    className="min-w-[10rem] max-w-[10rem] px-3 py-2 rounded-lg border text-sm font-medium transition
                flex items-center justify-between bg-white text-gray-700 border-gray-300 
                hover:bg-gray-100 whitespace-nowrap"
   >
