@@ -16,7 +16,7 @@ const EmailCapture: React.FC = () => {
  
 
   return (
-    <div className=" w-96 bg-gray-100 rounded-xl p-4 h-3/4 md:h-[14rem]">
+    <div className=" w-96 bg-gray-100 rounded-xl p-4 h-[15rem] md:h-[14rem]">
       <div className="flex items-center justify-center py-2">
         <div className="border-4 border-gray-400 bg-gray-600 rounded-full p-2">
           <Sparkles size={24} className="text-gray-300" />
