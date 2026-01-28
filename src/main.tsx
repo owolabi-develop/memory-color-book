@@ -90,7 +90,7 @@ createRoot(document.getElementById("root")!).render(
           <Route key={r.path} path={r.path} element={r.element} />
         ))}
 
-        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="checkout" element={<CheckoutPage />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
