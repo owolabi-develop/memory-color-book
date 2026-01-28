@@ -29,11 +29,11 @@ const ThemeSelection: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center space-y-2 h-full">
-        <p className="text-base text-gray-500 px-2">
+      <div className="text-center h-full">
+        <p className="text-lg text-gray-800 px-2 bold">
           Let's pick a theme that best fits what
         </p>
-        <p className="text-base text-gray-500 px-2">
+        <p className="text-lg text-gray-800 px-2 bold">
           you're creating. Select one:
         </p>
 

@@ -1,61 +1,76 @@
-import {} from 'react'
+
 import { motion } from "framer-motion";
-import { GeneralButton } from '../Buttons';
-import { SendHorizontal, Mic } from "lucide-react"
-// import IntroCard from './AICards/IntroCard'; 
-// import AIDIYChoice from './AICards/AIDiyChoice';
-// import RecipientCard from './AICards/RecipientCard';
-// import ForSomeoneElse from './AICards/ForSomeOneElse';
-// import RecipientRelationship from './AICards/RecipientRelationship';
-// import RecipientAge from './AICards/RecipientAge';
-// import ThemeSelection from './AICards/ThemeSelection';
-// import SubThemeSelection from './AICards/SubthemeSelection';
-// import PreviewSelection from './AICards/PreviewCard';
-import EmailCapture from './AICards/EmailCapture';
+import { GeneralButton } from '../../components/Buttons';
+import { MenuIconContainer } from '../../components/Buttons';
+import { MenuButton } from '../../components/Buttons';
+import { AiOutlineUser } from "react-icons/ai";
+import { X } from 'lucide-react';
+import SingleCapture from "../../components/AI/AICards/SingleCapture";
 
 
-
-const CreateBookSection = () => {
+const Flow12 = () => {
   const TOTAL_STEPS = 39;
-  let step = 1
+  let step = 2
   const isBackDisabled = step === 1;
   const progress = Math.min((step / TOTAL_STEPS) * 100, 100);
   return (
-    <section className='relative w-full p-5 bg-white md:mt-12 rounded-md'>
+    <section className='relative w-full p-5'>
 
 
-        <div className='w-full h-[34rem]'>
+        <div className='w-full h-full'>
 
         {/* header section */}
-        <div className='flex item-center justify-center'>
+        <div className='grid grid-cols-3 mt-10 gap-6'>
+
+           <div className="flex item-center justify-center">
+          
+            <MenuIconContainer icon={<X size={15}/>} />
+                     
+          </div>
             
           {/* Book creation progress */}
-          <div className="relative h-2 w-80 overflow-hidden rounded-full bg-gray-200">
+
+         
+          <div className="relative h-2 max-w-80 overflow-hidden rounded-full bg-gray-200 mt-3">
             <motion.div
-              className={`absolute left-0 top-0 h-full rounded-full bg-gray-400`}
+              className={` h-full rounded-full bg-gray-400`}
               initial={false}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.35, ease: "easeOut" }}
             />
           </div>
+         
+           
+           {/* links nav */}
+          <div className="flex gap-2 flex item-center justify-center">
+           
+            <MenuButton title="Gift Cards" className="whitespace-nowrap" />
+                    
+          
+            <MenuIconContainer icon={<AiOutlineUser />} />
+                     
+          </div>
+           {/* links nav */}
+          
+
         </div>
          
 
          {/* header section */}
 
          {/* main section */}
-          <div className='flex item-center justify-center w-full h-[27.8rem] md:h-[30rem] mt-2 p-2 py-18'>
+          <div className='flex item-center justify-center w-full  mt-2 p-2 py-18'>
 
-          <EmailCapture/>
+          <SingleCapture/>
           </div>
 
         {/* main section */}
 
         {/* bottom section */}
         
-        <div className='p-2 mt-2 grid grid-cols-1 md:grid-cols-3 '>
+        <div className='p-2 mt-2 grid grid-cols-2 md:grid-cols-2'>
             {/* back control */}
-             <div className='flex item-start justify-start'>
+             <div className='flex item-center justify-center'>
                 <GeneralButton title='Back' className={`${
                 isBackDisabled
                   ? "invisible"
@@ -66,7 +81,7 @@ const CreateBookSection = () => {
             {/* back control */}
 
             {/* chat input */}
-              <div className="flex item-center justify-center">
+              {/* <div className="flex item-center justify-center">
                     <div className="flex items-center gap-3 border rounded-xl px-2 py-1 w-full">
             
                       <input
@@ -86,12 +101,12 @@ const CreateBookSection = () => {
                       </button>
             
                     </div>
-                  </div>
+                  </div> */}
 
             {/* chat input */}
 
             {/* next control */}
-              <div className='flex item-end justify-end'>
+              <div className='flex item-center justify-center'>
                 <GeneralButton title='Next' className={`${
                 isBackDisabled || step == TOTAL_STEPS
                   ? "invisible" 
@@ -112,4 +127,4 @@ const CreateBookSection = () => {
   )
 }
 
-export default CreateBookSection
+export default Flow12

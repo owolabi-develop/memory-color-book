@@ -121,7 +121,7 @@ export const AIButton: React.FC<MenuButtonProps> = ({
     rounded-lg     
     font-medium
     transition-colors duration-300 ease-in-out
-    hover:bg-black hover:text-white
+    hover:bg-gray-100 hover:text-black
     cursor-pointer 
     flex items-center justify-center gap-2
     bg-white shadow-md
