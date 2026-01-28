@@ -5,7 +5,7 @@ import { MenuIconContainer } from '../../components/Buttons';
 import { MenuButton } from '../../components/Buttons';
 import { AiOutlineUser } from "react-icons/ai";
 import { X } from 'lucide-react';
- import SubThemeSelection from "../../components/AI/AICards/SubthemeSelection";
+import SubThemeSelection from "../../components/AI/AICards/SubthemeSelection";
 
 
 const Flow8 = () => {
