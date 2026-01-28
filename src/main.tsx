@@ -52,45 +52,45 @@ createRoot(document.getElementById('root')!).render(
 
    {/* RachelAI Agent route */}
 
-    <Route path='flow-1' element={<Flow1 />} />
-    <Route path='flow-2' element={<Flow2 />} />
-    <Route path='flow-3' element={<Flow3 />} />
-    <Route path='flow-4' element={<Flow4 />} />
-    <Route path='flow-5' element={<Flow5 />} />
-    <Route path='flow-6' element={<Flow6 />} />
-    <Route path='flow-7' element={<Flow7 />} />
-    <Route path='flow-8' element={<Flow8 />} />
-    <Route path='flow-9' element={<Flow9 />} />
-    <Route path='flow-10' element={<Flow10 />} />
-    <Route path='flow-11' element={<Flow11 />} />
-    <Route path='flow-12' element={<Flow12 />} />
-    <Route path='flow-13' element={<Flow13 />} />
-    <Route path='flow-14' element={<Flow14 />} />
-    <Route path='flow-15' element={<Flow15 />} />
-    <Route path='flow-16' element={<Flow16 />} />
-    <Route path='flow-17' element={<Flow17 />} />
-    <Route path='flow-18' element={<Flow18 />} />
-    <Route path='flow-19' element={<Flow19 />} />
-    <Route path='flow-20' element={<Flow20 />} />
-    <Route path='flow-21' element={<Flow21 />} />
-    <Route path='flow-22' element={<Flow22 />} />
-    <Route path='flow-23' element={<Flow23 />} />
-    <Route path='flow-24' element={<Flow24 />} />
-    <Route path='flow-25' element={<Flow25 />} />
-    <Route path='flow-26' element={<Flow26 />} />
-    <Route path='flow-27' element={<Flow27 />} />
-    <Route path='flow-28' element={<Flow28/>} />
-    <Route path='flow-29' element={<Flow29 />} />
-    <Route path='flow-30' element={<Flow30/>} />
-    <Route path='flow-31' element={<Flow31 />} />
-    <Route path='flow-32' element={<Flow32 />} />
-    <Route path='flow-33' element={<Flow33 />} />
-    <Route path='flow-34' element={<Flow34 />} />
+    <Route path='/flow-1' element={<Flow1 />} />
+    <Route path='/flow-2' element={<Flow2 />} />
+    <Route path='/flow-3' element={<Flow3 />} />
+    <Route path='/flow-4' element={<Flow4 />} />
+    <Route path='/flow-5' element={<Flow5 />} />
+    <Route path='/flow-6' element={<Flow6 />} />
+    <Route path='/flow-7' element={<Flow7 />} />
+    <Route path='/flow-8' element={<Flow8 />} />
+    <Route path='/flow-9' element={<Flow9 />} />
+    <Route path='/flow-10' element={<Flow10 />} />
+    <Route path='/flow-11' element={<Flow11 />} />
+    <Route path='/flow-12' element={<Flow12 />} />
+    <Route path='/flow-13' element={<Flow13 />} />
+    <Route path='/flow-14' element={<Flow14 />} />
+    <Route path='/flow-15' element={<Flow15 />} />
+    <Route path='/flow-16' element={<Flow16 />} />
+    <Route path='/flow-17' element={<Flow17 />} />
+    <Route path='/flow-18' element={<Flow18 />} />
+    <Route path='/flow-19' element={<Flow19 />} />
+    <Route path='/flow-20' element={<Flow20 />} />
+    <Route path='/flow-21' element={<Flow21 />} />
+    <Route path='/flow-22' element={<Flow22 />} />
+    <Route path='/flow-23' element={<Flow23 />} />
+    <Route path='/flow-24' element={<Flow24 />} />
+    <Route path='/flow-25' element={<Flow25 />} />
+    <Route path='/flow-26' element={<Flow26 />} />
+    <Route path='/flow-27' element={<Flow27 />} />
+    <Route path='/flow-28' element={<Flow28/>} />
+    <Route path='/flow-29' element={<Flow29 />} />
+    <Route path='/flow-30' element={<Flow30/>} />
+    <Route path='/flow-31' element={<Flow31 />} />
+    <Route path='/flow-32' element={<Flow32 />} />
+    <Route path='/flow-33' element={<Flow33 />} />
+    <Route path='/flow-34' element={<Flow34 />} />
 
    {/* RachelAI Agent route */}
 
    {/* checkout */}
-   <Route path='checkout' element={<CheckoutPage/>} />
+   <Route path='/checkout' element={<CheckoutPage/>} />
 
    {/* checkout */}
 
