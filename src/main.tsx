@@ -6,41 +6,41 @@ import './index.css'
 import App from './App.tsx'
 import NotFound from './pages/NotFound/NotFound.tsx';
 
-// import Flow1 from './pages/AI/Flow1.tsx';
-// import Flow2 from './pages/AI/Flow2.tsx';
-// import Flow3 from './pages/AI/Flow3.tsx';
-// import Flow4 from './pages/AI/Flow4.tsx';
-// import Flow5 from './pages/AI/Flow5.tsx';
-// import Flow6 from './pages/AI/Flow6.tsx';
-// import Flow7 from './pages/AI/Flow7.tsx';
-// import Flow8 from './pages/AI/Flow8.tsx';
-// import Flow9 from './pages/AI/Flow9.tsx';
-// import Flow10 from './pages/AI/Flow10.tsx';
+import Flow1 from './pages/AI/Flow1.tsx';
+import Flow2 from './pages/AI/Flow2.tsx';
+import Flow3 from './pages/AI/Flow3.tsx';
+import Flow4 from './pages/AI/Flow4.tsx';
+import Flow5 from './pages/AI/Flow5.tsx';
+import Flow6 from './pages/AI/Flow6.tsx';
+import Flow7 from './pages/AI/Flow7.tsx';
+import Flow8 from './pages/AI/Flow8.tsx';
+import Flow9 from './pages/AI/Flow9.tsx';
+import Flow10 from './pages/AI/Flow10.tsx';
 
-// import Flow11 from './pages/AI/Flow11.tsx';
-// import Flow12 from './pages/AI/Flow12.tsx';
-// import Flow13 from './pages/AI/Flow13.tsx';
-// import Flow14 from './pages/AI/Flow14.tsx';
-// import Flow15 from './pages/AI/Flow15.tsx';
-// import Flow16 from './pages/AI/Flow16.tsx';
-// import Flow17 from './pages/AI/Flow17.tsx';
-// import Flow18 from './pages/AI/Flow18.tsx';
-// import Flow19 from './pages/AI/Flow19.tsx';
-// import Flow20 from './pages/AI/Flow20.tsx';
-// import Flow21 from './pages/AI/Flow21.tsx';
-// import Flow22 from './pages/AI/Flow22.tsx';
-// import Flow23 from './pages/AI/Flow23.tsx';
-// import Flow24 from './pages/AI/Flow24.tsx';
-// import Flow25 from './pages/AI/Flow25.tsx';
-// import Flow26 from './pages/AI/Flow26.tsx';
-// import Flow27 from './pages/AI/Flow27.tsx';
-// import Flow28 from './pages/AI/Flow28.tsx';
-// import Flow29 from './pages/AI/Flow29.tsx';
-// import Flow30 from './pages/AI/Flow30.tsx';
-// import Flow31 from './pages/AI/Flow31.tsx';
-// import Flow32 from './pages/AI/Flow32.tsx';
-// import Flow33 from './pages/AI/Flow33.tsx';
-// import Flow34 from './pages/AI/Flow34.tsx';
+import Flow11 from './pages/AI/Flow11.tsx';
+import Flow12 from './pages/AI/Flow12.tsx';
+import Flow13 from './pages/AI/Flow13.tsx';
+import Flow14 from './pages/AI/Flow14.tsx';
+import Flow15 from './pages/AI/Flow15.tsx';
+import Flow16 from './pages/AI/Flow16.tsx';
+import Flow17 from './pages/AI/Flow17.tsx';
+import Flow18 from './pages/AI/Flow18.tsx';
+import Flow19 from './pages/AI/Flow19.tsx';
+import Flow20 from './pages/AI/Flow20.tsx';
+import Flow21 from './pages/AI/Flow21.tsx';
+import Flow22 from './pages/AI/Flow22.tsx';
+import Flow23 from './pages/AI/Flow23.tsx';
+import Flow24 from './pages/AI/Flow24.tsx';
+import Flow25 from './pages/AI/Flow25.tsx';
+import Flow26 from './pages/AI/Flow26.tsx';
+import Flow27 from './pages/AI/Flow27.tsx';
+import Flow28 from './pages/AI/Flow28.tsx';
+import Flow29 from './pages/AI/Flow29.tsx';
+import Flow30 from './pages/AI/Flow30.tsx';
+import Flow31 from './pages/AI/Flow31.tsx';
+import Flow32 from './pages/AI/Flow32.tsx';
+import Flow33 from './pages/AI/Flow33.tsx';
+import Flow34 from './pages/AI/Flow34.tsx';
 
 import CheckoutPage from './pages/Checkout.tsx';
 
@@ -52,7 +52,7 @@ createRoot(document.getElementById('root')!).render(
 
    {/* RachelAI Agent route */}
 
-    {/* <Route path='/flow-1' element={<Flow1 />} />
+    <Route path='/flow-1' element={<Flow1 />} />
     <Route path='/flow-2' element={<Flow2 />} />
     <Route path='/flow-3' element={<Flow3 />} />
     <Route path='/flow-4' element={<Flow4 />} />
@@ -85,7 +85,7 @@ createRoot(document.getElementById('root')!).render(
     <Route path='/flow-31' element={<Flow31 />} />
     <Route path='/flow-32' element={<Flow32 />} />
     <Route path='/flow-33' element={<Flow33 />} />
-    <Route path='/flow-34' element={<Flow34 />} /> */}
+    <Route path='/flow-34' element={<Flow34 />} />
 
    {/* RachelAI Agent route */}
 
