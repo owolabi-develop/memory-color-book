@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Sparkles } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 
-type SubselectedTheme = {
+type selectedTheme = {
   theme: string;
 };
 
@@ -15,9 +15,9 @@ const THEMES: readonly string[] = [
   "SomeThing else",
 ];
 
-const SubThemeSelection: React.FC = () => {
+const SubTheme: React.FC = () => {
     // Rachel flow 8 subtheme selections
-  const [selected, setSelected] = useState<SubselectedTheme | null>(null);
+  const [selected, setSelected] = useState<selectedTheme | null>(null);
 
   return (
     <div className="bg-gray-100 rounded-xl p-4 h-80 md:h-64">
@@ -63,5 +63,5 @@ const SubThemeSelection: React.FC = () => {
   );
 };
 
-export default SubThemeSelection;
+export default SubTheme;
 

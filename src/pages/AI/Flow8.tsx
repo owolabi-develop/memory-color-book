@@ -5,7 +5,7 @@ import { MenuIconContainer } from '../../components/Buttons';
 import { MenuButton } from '../../components/Buttons';
 import { AiOutlineUser } from "react-icons/ai";
 import { X } from 'lucide-react';
-import SubThemeSelection from "../../components/AI/AICards/SubthemeSelection";
+import SubTheme from "../../components/AI/AICards/Subtheme";
 
 
 const Flow8 = () => {
@@ -61,7 +61,7 @@ const Flow8 = () => {
          {/* main section */}
           <div className='flex item-center justify-center w-full  mt-2 p-2 py-18'>
 
-          <SubThemeSelection/>
+          <SubTheme/>
           </div>
 
         {/* main section */}
