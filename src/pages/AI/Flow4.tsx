@@ -1,14 +1,19 @@
-
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { GeneralButton } from '../../components/Buttons';
 import { MenuIconContainer } from '../../components/Buttons';
 import { MenuButton } from '../../components/Buttons';
 import { AiOutlineUser } from "react-icons/ai";
-import { X } from 'lucide-react';
+import { X,Mic,SendHorizontal} from 'lucide-react';
 import ForSomeoneElse from '../../components/AI/AICards/ForSomeoneElse';
 
+type UserInput = {
+  input:string
+}
 
 const Flow4 = () => {
+  const [userInput,setUserInput] = useState<UserInput>({input:""})
+
   const TOTAL_STEPS = 39;
   let step = 2
   const isBackDisabled = step === 1;
@@ -68,7 +73,7 @@ const Flow4 = () => {
 
         {/* bottom section */}
         
-        <div className='p-2 mt-2 grid grid-cols-2 md:grid-cols-2'>
+        <div className='p-2 mt-2 grid grid-cols-3 md:grid-cols-3'>
             {/* back control */}
              <div className='flex item-center justify-center'>
                 <GeneralButton title='Back' className={`${
@@ -81,13 +86,16 @@ const Flow4 = () => {
             {/* back control */}
 
             {/* chat input */}
-              {/* <div className="flex item-center justify-center">
+               <div className="flex item-center justify-center">
                     <div className="flex items-center gap-3 border rounded-xl px-2 py-1 w-full">
             
                       <input
+                        value={userInput.input}
+                        onChange={(e)=>setUserInput({input:e.target.value})}
                         placeholder="Ask Rachel"
                         className="flex-1  text-sm text-600 placeholder-gray-400 focus:outline-none w-full"
                       />
+                     
             
                       <button className="text-gray-600 hover:text-white transition cursor-pointer hover:bg-gray-500 rounded-full p-2">
                         <Mic size={20}/>
@@ -101,7 +109,7 @@ const Flow4 = () => {
                       </button>
             
                     </div>
-                  </div> */}
+                  </div> 
 
             {/* chat input */}
 
