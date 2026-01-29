@@ -26,7 +26,7 @@ const SingleCapture: React.FC = () => {
       </h2>
 
       {/* Main */}
-      <div className="flex flex-col md:flex-row gap-8 items-center mb-6">
+      <div className="flex flex-col md:flex-row items-center mb-6">
         {/* Left Chat Card */}
         <div className="w-[280px] h-[320px] border rounded-2xl bg-white shadow-sm flex flex-col">
           {/* Top area */}
@@ -43,7 +43,7 @@ const SingleCapture: React.FC = () => {
 
           {/* Input area */}
           <div className="p-3">
-            <div className="flex items-center gap-2 rounded-full border bg-white px-3 py-2">
+            <div className="flex items-center gap-2 rounded-xl border bg-white px-3 py-2">
               <input
                 value={text}
                 onChange={(e) => setText(e.target.value.slice(0, MAX_CHARS))}
