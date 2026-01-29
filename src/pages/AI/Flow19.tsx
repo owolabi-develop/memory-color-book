@@ -5,8 +5,7 @@ import { MenuIconContainer } from '../../components/Buttons';
 import { MenuButton } from '../../components/Buttons';
 import { AiOutlineUser } from "react-icons/ai";
 import { X } from 'lucide-react';
-import SelectFirstPhoto from "../../components/AI/AICards/SelectFirstPhoto";
-
+import PhotoSelectionBook from "../../components/AI/AICards/PhotoSelectionBook";
 
 const Flow19 = () => {
   const TOTAL_STEPS = 39;
@@ -61,7 +60,7 @@ const Flow19 = () => {
          {/* main section */}
           <div className='flex item-center justify-center w-full  mt-2 p-2 py-18'>
 
-          <SelectFirstPhoto/>
+          <PhotoSelectionBook/>
           </div>
 
         {/* main section */}

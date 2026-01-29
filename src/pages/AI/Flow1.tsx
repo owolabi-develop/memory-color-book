@@ -83,6 +83,7 @@ const Flow1 = () => {
              </div>
 
             {/* back control */}
+            
             {/* chat input */}
               <div className="flex item-center justify-center">
                     <div className="flex items-center gap-3 border rounded-xl px-2 py-1 w-full">
