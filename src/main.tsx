@@ -49,6 +49,7 @@ createRoot(document.getElementById('root')!).render(
    <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
+    
 
    {/* RachelAI Agent route */}
 
